@@ -1,0 +1,17 @@
+{
+  "name": "cljs-lambda",
+  "version": "0.1.0",
+  "description": "Hello World",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docker run --rm -v $PWD:/var/task lambci/lambda",
+    "build": "lumo -c src build.cljs"
+  },
+  "author": "John Jelinek IV <john@johnjelinek.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lumo-cljs": "^1.8.0-beta"
+  },
+  "dependencies": {}
+}
